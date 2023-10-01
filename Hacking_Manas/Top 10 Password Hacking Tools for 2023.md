@@ -138,3 +138,5 @@ The Computer Fraud and Abuse Act (CFAA) is the primary federal law in the U.S. p
 The Digital Millennium Copyright Act (DMCA) criminalizes attempts to circumvent access controls and digital rights management systems.
 State laws also penalize unauthorized access, wiretapping, and similar offenses.
 Beyond strict legality, hacking has huge ethical costs. At a minimum, it represents a betrayal of trust, like breaking into someone’s locked home. It can also enable far more damaging outcomes of identity theft, leaked personal details, stolen IP, etc. There is an individual and social responsibility to use technology ethically.
+
+## By @ Manas kumar Dey..
