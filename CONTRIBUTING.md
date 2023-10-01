@@ -25,4 +25,5 @@
 <br>
 
 ## Avoid Conflicts {Syncing your fork}
+### Read README.md 
 
