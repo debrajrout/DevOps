@@ -1,5 +1,5 @@
 # HacktoberFest
-Welcome to the Hacktoberfest H-Fest We're excited to have you contribute to our project, whether it's through code or non-code contributions.
+Welcome to the Dev.HFest I am  excited to have you contribute to this project, whether it's through code or non-code contributions.
 
 ## What is Hacktoberfest?
 Hacktoberfest is an annual event that encourages open-source contributions during the month of October. By participating, you can earn cool swag and get involved in the open-source community.
