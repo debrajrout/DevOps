@@ -4,7 +4,7 @@ Welcome to the Dev.HFest I am  excited to have you contribute to this project, w
 ### Register Here
 https://dev-hfest-m4zbc6xeb-debrajrout.vercel.app/
 
-## ❗ FOLLOW ME AND GIVE A ⭐ IN ORDER TO MERGE YOUR PR❗
+### ❗ FOLLOW ME AND GIVE A ⭐ IN ORDER TO MERGE YOUR PR❗
  
 ## What is Hacktoberfest?
 Hacktoberfest is an annual event that encourages open-source contributions during the month of October. By participating, you can earn cool swag and get involved in the open-source community.
