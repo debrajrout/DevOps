@@ -40,5 +40,5 @@ Thank you for contributing to Hacktoberfest! Your contributions help make open s
 
 ## Our Top Contributors 
 <p align="center"><a href="https://github.com/debrajrout/Dev.HFest/graphs/contributors">
-  <img src="https://contributors-img.web.app/image?repo=debrajrout/Dev.HFest" />
+
 </a></p>
