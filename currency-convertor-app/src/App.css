@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+input, select, button {
+  margin: 0 5px;
+  padding: 5px;
+}
+
+select {
+  padding: 7px;
+}
+
+p {
+  font-size: 1.2em;
+}
