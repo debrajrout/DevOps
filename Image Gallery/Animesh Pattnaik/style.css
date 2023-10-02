@@ -1,0 +1,165 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    
+    margin: 5%;
+    background :#081b29; 
+}
+
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.head img{
+    width: 32%;
+    transition: transform .5s;
+    height: auto;
+    flex: 1;
+    margin-left: 8%;
+    
+}
+
+.right{
+    visibility: hidden;
+}
+
+.head img:hover{
+    transform: scale(1.25);
+}
+
+.head h1{
+    color:rgb(15, 204, 204);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.head h1:before{
+    content: '';
+    position: absolute;
+    left: 120%;
+    width: 120%;
+    height: 120%;
+    background: linear-gradient(90deg, transparent 0%,#081b29 5%, #081b29 100% );
+    animation: animate 8s linear infinite;
+}
+
+@keyframes animate{
+    0%
+    {
+        left: -20%;
+    }
+    50%
+    {
+        left: 120%;
+    }
+    100%
+    {
+        left: -20%;
+    }
+}
+
+.gallery h1{
+    color: #00abf0;
+    text-align: center;
+}
+
+.gallery{
+    margin-top: 4%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 70px;
+    
+}
+
+.gallery img{
+    height: auto;
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img{
+    transition: transform .5s;
+    width: 65%;
+    height: auto;
+}
+
+img:hover{
+    transform: scale(1.05);
+}
+
+.gallery p{
+    color: #b8c5d4;
+    font-size: 97%;
+    letter-spacing: 1px;
+    line-height: 97%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.gallery h1{
+    color: #00abf0;
+    font-size: 100%;
+    margin-top: 7%;
+    letter-spacing: 1px;
+    line-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width:950px) {
+    .head img{
+        width: 38%;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .gallery{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .head img{
+        width: 44%;
+    }
+
+}
+@media screen and (max-width:750px) {
+    .head img{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .head img{
+        width: 68%;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .head img{
+        width: 78%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .gallery{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .head img{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .head img{
+        width: 100%;
+    }
+}
