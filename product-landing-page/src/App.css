@@ -1,0 +1,28 @@
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+.card {
+  width: 18rem;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.card-title {
+  font-size: 1.5em;
+}
+
+.card-text {
+  font-size: 1.2em;
+}
+
+.btn-primary {
+  width: 100%;
+}
