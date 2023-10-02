@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="CodeHim">
+    <title>Simple Todo Example</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/demo.css">
+  
+  </head>
+  <body>
+ <header class="intro">
+ <h1>Simple Todo List Example</h1>
+ <p>Pure JavaScript Todo List.</p>
+ </header>
+  
+      
+ <main>
+   <div class="todo">
+    <section>
+        <h1>Todo list</h1>
+        <form id="form">
+            <p>
+                <label for="title">
+                    <span>Title <strong><abbr title="required">*</abbr></strong></span>
+                    <input type="text" id="title" name="title"  />
+                </label>
+            </p>
+            <p>
+                <label for="content">
+                    <span>Content </span>
+                    <input type="text" id="content" name="content" />
+                </label>
+            </p>
+            <p>
+                <button id="add-task" type="button">Add task</button>
+            </p>
+        </form>
+    </section>
+</div>
+<div id="todos"></div>  
+ </main>
+ 
+        
+  <!-- Script JS -->
+  <script src="./js/script.js"></script>
+   
+  </body>
+</html>
