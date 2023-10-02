@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional Animations</title>
+    <style>
+        /* CSS for styling and animation */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #222;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: #3498db;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+            animation: pulsate 2s infinite;
+        }
+
+        .animated {
+            animation-play-state: running;
+        }
+
+        @keyframes pulsate {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-50px);
+            }
+        }
+        label {
+            color: white; /* Set the label text color to white */
+        }
+
+        button {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        select {
+            padding: 10px;
+            font-size: 16px;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <label for="animationSelect">Select Animation:</label>
+        <select id="animationSelect">
+            <option value="pulsate">Pulsate</option>
+            <option value="rotate">Rotate</option>
+            <option value="bounce">Bounce</option>
+        </select>
+        <br>
+        <button id="startButton">Start Animation</button>
+        <button id="stopButton">Stop Animation</button>
+    </div>
+    <script>
+        // JavaScript for controlling the animation
+        const box = document.querySelector('.box');
+        const startButton = document.getElementById('startButton');
+        const stopButton = document.getElementById('stopButton');
+        const animationSelect = document.getElementById('animationSelect');
+        let isAnimating = false;
+
+        startButton.addEventListener('click', () => {
+            if (!isAnimating) {
+                const selectedAnimation = animationSelect.value;
+                box.style.animationName = selectedAnimation;
+                box.style.animationPlayState = 'running';
+                isAnimating = true;
+            }
+        });
+
+        stopButton.addEventListener('click', () => {
+            if (isAnimating) {
+                box.style.animationPlayState = 'paused';
+                isAnimating = false;
+            }
+        });
+    </script>
+</body>
+</html>
