@@ -1,3 +1,9 @@
+### Register Here
+https://dev-hfest-m4zbc6xeb-debrajrout.vercel.app/
+
+#### ❗ FOLLOW ME AND GIVE A ⭐ IN ORDER TO MERGE YOUR PR❗
+
+You can create your own issue 
 
 # Contribution Rules📚:
 
