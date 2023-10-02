@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GeeksPay</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            HackPay 🚀
+        </header>
+        <div class="pay-amnt">
+            <div>Pay Amount</div>
+            <div>
+                ₹<input type="text" name="amount" class="input-amount" placeholder="Enter amount">
+            </div>
+        </div>
+        <div class="select-option">Select options to pay</div>
+        <div class="option-cont">
+            <!-- upi -->
+            <div class="upi-cont">
+                <div class="option-head">
+                    <div>
+                        <img src="./assets/upi.png" alt="" class="pay-img">
+                        <div>UPI</div>
+                    </div>
+                    <img src="./assets/arrow.png" alt="" class="upi arrow-img arrow-rotate" role="button">
+                </div>
+                <div class="upi-pay">
+                    <input type="number" placeholder="Enter UPI id">
+                    <button>Pay Now</button>
+                </div>
+            </div>
+            <!-- card -->
+            <div>
+                <div class="option-head">
+                    <div>
+                        <img src="assets/credot-card.png" alt="" class="pay-img">
+                        <div>Card</div>
+                    </div>
+                    <img src="./assets/arrow.png" alt="" class=" card arrow-img arrow-rotate" role="button">
+                </div>
+                <div class="card-pay">
+                    <input type="text" name="Name" placeholder="Enter Name">
+                    <input type="text" name="Card-Number" placeholder="XXXX-XXXX-XXXX-XXXX">
+                    <div>
+                        <input type="text" name="Date" placeholder="DD/YY">
+                        <input type="password" name="CVV" placeholder="Enter CVV">
+                    </div>
+                    <button type="submit">Pay Now</button>
+                </div>
+            </div>
+            <!-- netbank -->
+            <div>
+                <div class="option-head">
+                    <div>
+                        <img src="./assets/net-banking.png" alt="" class="pay-img">
+                        <div>Net Banking</div>
+                    </div>
+                    <img src="./assets/arrow.png" alt="" class="bank arrow-img arrow-rotate" role="button">
+                </div>
+                <div class="bank-pay">
+                    <div>
+                        <input type="radio" name="Bank A" id="">
+                        <div>Bank A</div>
+                    </div>
+                    <div>
+                        <input type="radio" name="Bank A" id="">
+                        <div>Bank B</div>
+                    </div>
+                    <div>
+                        <input type="radio" name="Bank A" id="">
+                        <div>Bank C</div>
+                    </div>
+                    <button type="submit">Pay Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
