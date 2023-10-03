@@ -1,4 +1,4 @@
-# SentimentScan - Yelp Restaurant Review 
+# SentimentScanner - Yelp Restaurant Review 
 
 
 
@@ -8,13 +8,13 @@ https://github.com/tuhinaww/SentimentScan/assets/119059108/3062df61-551c-44c5-bd
 
 
 
-## How to Run SentimentScan Locally
+## How to Run SentimentScanner Locally
 
 Follow these steps to run SentimentScan on your local machine:
 
 ## Step 1: Clone the Repository
 
-Clone the SentimentScan repository to your local machine 
+Clone the SentimentScanner repository to your local machine 
 
 ## Step 2: Install Dependencies
 
@@ -25,7 +25,7 @@ pip install -r requirements.txt
 ```
 ## Step 3: Run the Application
 
-Once the dependencies are installed, you can start the SentimentScan web app by running the following command in your terminal:
+Once the dependencies are installed, you can start the SentimentScanner web app by running the following command in your terminal:
 
 ```shell
 python yelp.py
