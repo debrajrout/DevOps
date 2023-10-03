@@ -1,0 +1,75 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style the form */
+.form-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the input field and submit button */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style the result page */
+/* Center the result container vertically and horizontally */
+.result-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style the sentiment score */
+.sentiment-score {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* Style the table */
+table {
+    width: 80%;
+    margin-top: 20px;
+}
+
+table th {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Style table rows and cells */
+table tbody tr {
+    border-bottom: 1px solid #dee2e6;
+}
+
+table td {
+    padding: 10px;
+}
+
+/* Add some padding to the table headers */
+table th,
+table td {
+    padding: 10px;
+    text-align: center;
+}
