@@ -1,0 +1,114 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    
+   /* for(int row=1;row<=5;row++)
+    {
+        for(int space=1;space<=5-row;space++)      //Q1.
+        {
+            cout<<" ";
+        }
+
+        for(int col=1;col<=((2*row)-1);col++)
+        {
+            cout<<"*";
+        }
+        cout<<endl;
+    }*/
+
+
+
+
+     /*for(int row=1;row<=5;row++)
+     {
+        for(int space=1;space<=5-row;space++)       //Q2.
+        {
+            cout<<" ";
+        }
+        
+        for(int col1=1;col1<=row;col1++)
+        {
+            cout<<col1;
+        }
+
+        for(int col2=row-1;col2>=1;col2--)
+        {
+            cout<<col2;
+        }
+        cout<<endl;
+     }*/
+
+
+
+
+  /* int space;
+    for(int row=1;row<=5;row++)
+    {
+        for( space=1;space<=row-1;space++)    //Q3.
+        {
+            cout<<" ";
+        }
+
+        for(int col=1;col<=(9-(2*space-2));col++)
+        {
+            cout<<"*";
+        }
+        cout<<endl;
+    }*/
+
+
+
+
+
+//diamond shape problem
+
+
+
+/*int row,col,space,n;
+
+for(row=4;row>=1;row--)
+{
+    for(col=1;col<=row;col++)                  //Q4.
+    {
+        cout<<"*";
+    }
+
+    for(space=1;space<=(2*4-2*row);space++)
+    {
+        cout<<" ";
+    }
+    for(col=1;col<=row;col++)
+    {
+        cout<<"*";
+    }
+
+    cout<<endl;
+
+}
+
+for(row=1;row<=4;row++)
+{
+    for(col=1;col<=row;col++)
+    {
+        cout<<"*";
+    }
+
+    for(col=1;col<=(2*4-2*row);col++)
+    {
+        cout<<" ";
+    }
+    for(col=1;col<=row;col++)
+    {
+        cout<<"*";
+    }
+
+    cout<<endl;
+
+}*/
+
+
+
+
+
+}
