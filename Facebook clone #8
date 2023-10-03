@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UJJWAL</title>
+
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightgrey;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1876f2;
+    padding: 5px 5%;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+}
+
+.logo{
+    width: 160px;
+    margin-right: 45px;
+}
+
+.nav-left{
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-left ul li{
+    list-style: none;
+display: inline-block;
+}
+
+.nav-left ul li img{
+    width: 28px;
+    margin: 0 15px;
+}
+
+/*yaha se ab hum nav bar mai right side ka bana rahe hai */
+
+.nav-right{
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-user-icon{
+    margin-left:30px ;
+}
+
+.nav-user-icon img{
+    width: 40px;
+    border-radius: 50%;
+    cursor:pointer;
+
+}
+
+.search-box{
+    background: #efefef  ;
+    width: 350px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.search-box img{
+    width: 18px;
+
+}
+
+.search-box input{
+    width: 100%;
+    background: transparent;
+    padding: 10px;
+    outline: none;
+    border: 0;
+}
+
+.online{
+    position: relative;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 5%;
+
+}
+
+
+.left-sidebar{
+        flex-basis: 25%;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
+
+    
+}
+
+
+.right-sidebar{
+    
+    flex-basis: 25%;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    color: #626262;
+
+}
+
+
+.main-content{
+    flex-basis: 47%;
+}
+
+
+.imp-links a,.shortcut-links a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    color: #626262;
+    width: fit-content;
+
+}
+
+
+.imp-links a img{
+    width: 25px;
+    margin-right: 15px;
+}
+
+.imp-links a:last-child{
+    color: #1876f2;
+}
+
+
+.imp-links{
+    border-bottom: 1px solid #ccc;
+}
+
+.shortcut-links a img{
+    width: 40px;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+
+.shortcut-links p{
+    margin: 25px 0;
+    color: #626262;
+    font-weight: 500;
+}
+
+.sidebar-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+
+}
+
+.sidebar-title h4{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.sidebar-title a{
+    text-decoration: none;
+    color: #1876f2;
+    font-size: 12px;
+}
+
+.event{
+    display: flex;
+    font-size: 14px;
+    margin-bottom: 20px;
+
+}
+
+.left-event{
+    border-radius: 10px;
+    height: 65px;
+    width: 65px;
+    margin-right: 15px;
+    padding-top:10px ;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.event p{
+    font-size: 12px;
+
+}
+
+.event a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #1876f2;
+}
+
+.left-event span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #1876f2;
+    color: #fff;
+    font-size: 10px;
+    padding:4px 0 ;
+}
+
+
+.sidebar-ads{
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 4px;
+
+}
+
+.online-list{
+    display: flex;
+    align-items: center;
+    margin-bottom:20px ;
+
+}
+.online-list .online img{
+    width: 40px;
+    border-radius:50% ;
+}
+
+.online-list .online{
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.story-gallery{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+
+.story{
+    flex-basis: 18%;
+    padding-top:32% ;
+    position: relative;
+    background-image:  url(images/status-1.png);
+    background-position: center;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+.story img{
+    position: absolute;
+    width: 45px;
+    border-radius: 50%;
+    top: 10px;
+    left: 10px;
+    border-radius: 5px solid #626262;
+}
+
+.story p{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size:10px ;
+}
+
+.story1{
+    background-image:  url(images/status-1.png);
+}
+
+.story2{
+    background-image:  url(images/status-2.png);
+}
+
+
+.story3{
+    background-image:  url(images/status-3.png);
+}
+
+.story4{
+    background-image:  url(images/status-4.png);
+}
+
+.story5{
+    background-image:  url(images/status-5.png);
+}
+
+    </style>
+   
+</head>
+<body>
+
+
+    <nav>
+        <div class="nav-left">
+            <img src="images/logo1.png" class="logo">
+            <ul>
+                <li><img src="images/notification.png" alt=""></li>
+                <li><img src="images/inbox.png" alt=""></li> 
+                <li><img src="images/video.png" alt=""></li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="images/search.png" >
+                <input type="text"  placeholder="search">
+            </div>
+            <div class="nav-user-icon online">
+                <img src="images/profile-pic.png" alt="">
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <div class="container">
+
+        <div class="left-sidebar">
+            <div class="imp-links">
+                <a href="#"> <img src="images/news.png">Latest News</a>
+                <a href="#"> <img src="images/friends.png">Friends</a>
+                <a href="#"> <img src="images/group.png">Group</a>
+                <a href="#"> <img src="images/marketplace.png">marketplace</a>
+                <a href="#"> <img src="images/watch.png">Watch</a>  
+                <a href="#"> see more</a>            
+            </div>
+
+            <div class="shortcut-links">
+                <p>Your shortcut</p>
+                <a href="#"><img src="images/shortcut-1.png" >web developer</a>
+                <a href="#"><img src="images/shortcut-2.png" >web design course</a>
+                <a href="#"><img src="images/shortcut-3.png">Full stack development</a>
+                <a href="#"><img src="images/shortcut-4.png">website expert</a>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="main-content">
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="images/upload.png" alt="">
+                    <p>post story</p>
+                </div>
+
+
+                <div class="story story2">
+                    <img src="images/member-1.png" alt="">
+                    <p>ambani</p>
+                </div>  
+
+                <div class="story story3">
+                    <img src="images/member-2.png" alt="">
+                    <p>elon</p>
+                </div>
+
+                <div class="story story4 ">
+                    <img src="images/member-3.png" alt="">
+                    <p>steve</p>
+                </div>
+
+                <div class="story story5">
+                    <img src="images/member-4.png" alt="">
+                    <p>bill gates</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>October</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p>Delhi</p>
+                    <a href="#">More info</a>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>22</h3>
+                    <span>October</span>
+                </div>
+                <div class="right-event">
+                    <h4>mobile </h4>
+                    <p>Delhi</p>
+                    <a href="#">More info</a>
+                </div>
+            </div>
+            <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <a href="#">close</a>
+            </div>
+            <img src="images/advertisement.png" class="sidebar-ads">
+
+            <div class="sidebar-title">
+                <h4>Conversation</h4>
+                <a href="#">hide chat</a>
+            </div>
+
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-1.png" alt="">
+                </div>
+                <p>LISA</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-2.png" alt="">
+                </div>
+                <p>UJJWAL SHIVHARE</p>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-3.png" alt="">
+                </div>
+                <p>Alison</p>
+            </div>
+        </div>
+    </div>
+    
+
+    
+</body>
+</html>
