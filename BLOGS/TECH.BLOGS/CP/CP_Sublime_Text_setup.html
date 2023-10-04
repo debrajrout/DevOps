@@ -1,0 +1,52 @@
+<h2 id="the-best-competitive-programming-setup-sublime-text-">The Best Competitive Programming Setup! (Sublime Text)</h2>
+<p>If you're one of those VS Code users, then I can understand how tedious it is to copy-paste each test case onto your terminal and rerun your code every time. (<em>Unless you use THAT extension</em>) In this short tutorial, I will help you setup your competitive programming setup on Sublime Text which will enable to parse all test cases with a single click!</p>
+<p>Anyways, enough the briefings, let me show you my setup for competitive programming. This is probably one of the most effective setups out there to  <em>avoid wasting precious time on copying test-cases.</em></p>
+<hr />
+<h3 id="prerequisites-">Prerequisites ~</h3>
+<ol>
+<li>Python3 installed. (DIY!)</li>
+</ol>
+<hr />
+<h3 id="-follow-these-underlying-steps-carefully-"><strong>Follow these underlying steps carefully ~</strong></h3>
+<ol>
+<li><p><strong>Download and Install Sublime Text ~</strong> Sublime Text is by far the most versatile text editor in the market. Although, it has a paid version, the unregistered version has NO downsides. It's lightweight, easily customizable (<em>unlike Vim)</em> and vast number of packages and plugins can be used to effectively increase its functionality. Download it from <a href="https://www.sublimetext.com/download">here</a>.</p>
+</li>
+<li><p><strong>Install Package Control ~</strong> Any package in Sublime Text can be downloaded from Package Control. You can install Package Control from <code>Sublime Text &gt; Tools &gt; Install Package Control</code>. Let the process finish and restart Sublime Text.</p>
+</li>
+<li><p><strong>Install CppFastOlympicCoding Plugin ~</strong> Download CppFastOlympicCoding plugin from the Package Control. You can do so by <code>Sublime Text &gt; Preferences &gt; Package Control &gt; Install Packages &gt; CppFastOlympicCoding</code>.</p>
+</li>
+<li><p><strong>Clone FastOlympicCodingHook ~</strong> To parse the test cases on any site (<em>with the help of Competitive Companion which we will install in the next step</em>) you need to <a href="https://github.com/DrSwad/FastOlympicCodingHook/archive/refs/heads/master.zip">download</a> and extract the folder. Now, copy the folder itself and navigate to <code>Sublime Text &gt; Preferences &gt; Browse Packages</code>. This should open a directory, paste the folder here.</p>
+</li>
+<li><p><strong>Additional Step for Windows Users ~</strong> Copy the following code <code>"tests_file_suffix": "__tests"</code> and paste this in the settings file of FastOlympicCoding. <code>Sublime Text &gt; Tools &gt; FastOlympicCoding &gt; Settings &gt; FastOlympicCoding.sublime-settings</code>. (<em>the file which is empty</em>)</p>
+</li>
+<li><p><strong>Install Competitive Companion ~</strong> Competitive Companion is amazing browser extension which parses test cases from webpages. Download it from the web store or you can <a href="https://chrome.google.com/webstore/detail/competitive-companion/cjnmckjndlpiamhfimnnjmnckgghkjbl">click here</a>. Pin this extension to make it easier to use.</p>
+</li>
+<li><p><strong>Setting Up Custom Port ~</strong> Now, to receive the parsed test cases, we need to specify the Port where the data will be sent. The custom port that we need to setup is Port <code>12345</code>. Add this Port to Competitive Companion by right-clicking on the extension then go to <code>Options &gt; Custom ports</code>.</p>
+</li>
+</ol>
+<p>I hope there was nothing too fancy in the above mentioned steps, and you were able to follow them easily. Now, since we have our environment all setup, it's time to TEST!</p>
+<hr />
+<h3 id="how-to-use-">How to use?</h3>
+<ol>
+<li><p>Navigate to the problem page on any competitive programming site. Let's take a random problem for the sake of it right now - <a href="https://codeforces.com/contest/4/problem/A">Watermelon (Codeforces)</a>.</p>
+</li>
+<li><p>Copy-paste the following code in a new file in Sublime Text.</p>
+</li>
+</ol>
+<script src="https://gist.github.com/Kraizan/54034209d41b5625755f18d20624727f.js"></script>
+
+
+<ol>
+<li><p>Right-click anywhere on the file. Now, click on <code>Listen to Competitive Companion</code>.</p>
+</li>
+<li><p>Switch tab to Codeforces problem page and click on the Competitive Companion extension (<em>green + button</em>).</p>
+</li>
+<li><p>A small loading will appear under your address bar. (<em>The test cases have been parsed</em>)</p>
+</li>
+<li><p>Go back to Sublime Text and press <code>ctrl + alt + b</code>.  (for OSX use <code>ctrl + shift + p</code>)</p>
+</li>
+<li><p>A new window will on the right side of your sublime workspace which will show the test cases and their result.</p>
+</li>
+</ol>
+<p><strong>That's All Folks!</strong>
+This is Vanshaj (Kraizan) Bhatnagar signing off for now!</p>
