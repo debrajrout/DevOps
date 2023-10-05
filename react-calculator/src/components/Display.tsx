@@ -1,9 +1,14 @@
-import React from 'react'
-import { ButtonProps } from '../types/Types'
+/* 
+This component will be responsible for displaying the numbers / symbols the user enters. 
+*/
+
+
+import { ButtonProps } from "./Buttons";
 
 
 
-const Display = ({button}: ButtonProps) => {
+
+const Display = ({onButtonClick: getButtonInput}: ButtonProps) => {
   return (
     <div>
 
