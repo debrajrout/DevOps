@@ -22,31 +22,31 @@ export const handleButtonClick = (button: ButtonValue):string => {
             return "dummy solution"
         case "7":
             //TODO: Logic for 7 button
-            return "dummy solution"
+            return "7";
         case "8":
             //TODO: Logic for 8 button
-            return "dummy solution"
+            return "8"
         case "9":
             //TODO: Logic for 9 button
-            return "dummy solution"
+            return "9"
         case "X":
             //TODO: Logic for X button
             return "dummy solution"
         case "4":
             //TODO: Logic for 4 button
-            return "dummy solution"
+            return "4"
         case "5":
             //TODO: Logic for 5 button
-            return "dummy solution"
+            return "5"
         case "6":
             //TODO: Logic for 6 button
-            return "dummy solution"
+            return "6"
         case "-":
             //TODO: Logic for - button
             return "dummy solution"
         case "1":
             //TODO: Logic for 1 button
-            return "dummy solution"
+            return "1"
         case "2":
             //TODO: Logic for 2 button
             return "dummy solution"
@@ -55,10 +55,10 @@ export const handleButtonClick = (button: ButtonValue):string => {
             return "dummy solution"
         case "+":
             //TODO: Logic for + button
-            return "dummy solution"
+            return "3"
         case "0":
             //TODO: Logic for 0 button
-            return "dummy solution"
+            return "0"
         case ".":
             //TODO: Logic for . button
             return "dummy solution"
