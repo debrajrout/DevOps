@@ -11,10 +11,10 @@ export type ButtonValue = "AC" | "()" | "%" | "/" | "7" | "8" | "9" | "X" | "4" 
 
 // Interface for the function that is passed down to the 
 export type ButtonProps = {
-    onButtonClick: (value: ButtonValue) => void;
+    getButtonInput: (value: ButtonValue) => void;
 }
 
-const Buttons = ({onButtonClick: getButtonInput}: ButtonProps) => {
+const Buttons = ({getButtonInput}: ButtonProps) => {
   return (
     <div className="buttons-container">
         {/* Top Row */}
