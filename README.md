@@ -58,15 +58,14 @@ Non-developers can also contribute in various ways, such as:
 
  <a name="contributors"></a>
 ## Our Top Contributors 
-<details>
+
 <a href="https://github.com/debrajrout/DevOps/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=debrajrout/DevOps" />
 </a>
-</details>
+
 
 </a></p>
 
 ## Happy Hacking...
 Thank you for contributing to Hacktoberfest! Your contributions help make open source better for everyone. If you have any questions, feel free to reach out to me on [Linkedin](https://www.linkedin.com/in/debarajrout/).
 
-### Happy hacking!~
