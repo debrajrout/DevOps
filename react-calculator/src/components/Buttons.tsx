@@ -26,7 +26,7 @@ const Buttons = ({getButtonInput}: ButtonProps) => {
 
 
         {/* Second Row */}
-        <button value="7" onClick={(e) => getButtonInput(e.currentTarget.value as ButtonValue)}>7</button>
+        <button value="7" onClick={(e) => { console.log('Button clicked:', e.currentTarget.value); getButtonInput(e.currentTarget.value as ButtonValue);}}>7</button>
         <button value="8" onClick={(e) => getButtonInput(e.currentTarget.value as ButtonValue)}>8</button>
         <button value="9" onClick={(e) => getButtonInput(e.currentTarget.value as ButtonValue)}>9</button>
         <button value="X" onClick={(e) => getButtonInput(e.currentTarget.value as ButtonValue)}>X</button>

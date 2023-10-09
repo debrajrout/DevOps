@@ -7,6 +7,7 @@ Due to the large nature of this function, I moved it to a separate file so App.t
 import { ButtonValue } from "./Buttons";
 
 export const handleButtonClick = (button: ButtonValue):string => {
+    console.log("HandleButtonClick function firing")
     switch (button) {
         case "AC":
             //TODO: Logic for AC button
