@@ -16,6 +16,16 @@ export const handleButtonLogic = (currentState: string[], buttonValue: ButtonVal
         return [evaluateSequence(updatedState).toString()];
     }
 
+    if (buttonValue === '<-- Back') {
+        // If the last entry is a number and has more than one digit, remove the last digit
+        if (/^[0-9.]+$/.test(updatedState[updatedState.length - 1]) && updatedState[updatedState.length - 1].length > 1) {
+            updatedState[updatedState.length - 1] = updatedState[updatedState.length - 1].slice(0, -1);
+        } else {
+            // Otherwise, remove the last entry entirely
+            updatedState.pop();
+        }
+    }
+
     if (buttonValue === '.') {
         console.log("Hitting the '.' of the handleButtonLogic")
         // If the last entry is a number and does not contain a dot yet

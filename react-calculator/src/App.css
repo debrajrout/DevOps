@@ -40,7 +40,16 @@
 .buttons-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 50px;
   border: 2px solid black;
   margin: 0rem 5rem;
   gap: 5px;
+}
+
+.AC-button {
+  grid-column: span 3;
+}
+
+.equal-button {
+  grid-row: span 2;
 }
