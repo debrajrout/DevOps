@@ -29,7 +29,6 @@ function App() {
     <div className="App">
       <h1>React Calculator: Made with TypeScript</h1>
       <Layout>
-        <p>Test Test?</p>
         <Display value={displayValue.join(' ')} />
         <Buttons getButtonInput={getButtonInput} />
       </Layout  >

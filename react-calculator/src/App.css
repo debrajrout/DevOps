@@ -53,3 +53,17 @@
 .equal-button {
   grid-row: span 2;
 }
+
+/* Display */
+
+/* .display-container {
+  color: white;
+  border: 2px solid green;
+} */
+
+.display-container p {
+  border: 2px solid blue;
+  height: 1.5rem;
+  margin: 0rem 5rem; 
+  margin-bottom: 1rem;
+}

@@ -15,7 +15,7 @@ const Display = ({ value }: DisplayProps) => {
 }, [value]);
   
   return (
-    <div>
+    <div className="display-container">
       <p>{value}</p>
     </div>
   );
