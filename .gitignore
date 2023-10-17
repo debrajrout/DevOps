@@ -1,0 +1,4 @@
+.venv/
+DjangoBlog/db.sqlite3
+DjangoBlog/Accounts/migrations/
+DjangoBlog/BlogPost/migrations/

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  <title>Home</title>
+{% endblock %}
+
+{% block content %}
+
+<div class="container text-start">
+  <div class="row">
+        {% for post in blogPost %}
+        <div class="col-sm-8">
+          <img src="{{ post.picture.url }}" alt="IMAGE" class="img-fluid"/>
+           <h3>{{ post.title }}</h3>
+          <p>{{ post.body }}</p>
+        </div>
+        {% endfor %}
+
+      </div>
+    </div>
+
+{% endblock %}
