@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.login {
+    background-color: burlywood;
+    border-radius: 30px;
+    text-decoration: none;
+    width: 70px;
+    color: white;
+}
+.signup {
+    background-color: rgb(230, 142, 42);
+    border-radius: 30px;
+    text-decoration: none;
+    width: 70px;
+    color: white;
+
+}
+section{
+    margin-top: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
