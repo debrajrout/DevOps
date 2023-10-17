@@ -10,7 +10,7 @@
   <div class="row">
         {% for post in blogPost %}
         <div class="col-sm-8">
-          <img src="{{ post.picture }}" alt="IMAGE" />
+          <img src="{{ post.picture.url }}" alt="IMAGE" class="img-fluid"/>
            <h3>{{ post.title }}</h3>
           <p>{{ post.body }}</p>
         </div>

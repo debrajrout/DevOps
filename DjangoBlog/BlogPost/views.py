@@ -27,6 +27,8 @@ class TechnologyListView(ListView):
 class AiListView(ListView):
     model = BlogPost
     template_name = "ai.html"
+    context_object_name = 'AiPost'
+
 
 
 class FoodListView(ListView):
