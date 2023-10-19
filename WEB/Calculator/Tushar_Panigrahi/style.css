@@ -1,0 +1,156 @@
+.button {
+  border: none;
+  background: none;
+  text-align: center;
+  height: 70px;
+  width: 70px;
+  color: white;
+  font-size: 20px;
+}
+.roww {
+  display: table;
+}
+.row {
+  display: table;
+}
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  border: solid thin black;
+  background-color: black;
+  color: white;
+  box-shadow: rgba(119, 108, 108, 0.25) 0px 54px 55px,
+  rgba(119, 108, 108, 0.12) 0px -12px 30px, rgba(119, 108, 108, 0.12) 0px 4px 6px,
+  rgba(119, 108, 108, 0.17) 0px 12px 13px, rgba(119, 108, 108, 0.09) 0px -3px 5px;  border-top: none;
+  display: table;
+  border-width: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+#smalltext {
+  text-align: center;
+  margin-top: 160px;
+  color: black;
+  font-size: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 302px;
+  border: solid thin;
+  padding-bottom: 29px;
+  margin-bottom: 0px;
+  text-align: right;
+  border-bottom: none;
+  box-shadow: rgba(119, 108, 108, 0.25) 0px 54px 55px,
+  rgba(119, 108, 108, 0.12) 0px -12px 30px, rgba(119, 108, 108, 0.12) 0px 4px 6px,
+  rgba(119, 108, 108, 0.17) 0px 12px 13px, rgba(119, 108, 108, 0.09) 0px -3px 5px;  height: 50px;
+  border-width: 10px;
+  border-top-width: 25px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: white;
+}
+.equal {
+  background-color: rgb(189, 34, 184);
+  border-radius: 30px;
+  height: 60px;
+  width: 60px;
+}
+button:hover {
+  background-color: transparent;
+  border: solid 2px;
+}
+body {
+  background-color: white;
+  background-image: url(Free-Google-Slides-Math-Background.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+#bigtext {
+  width: 380px;
+  text-align: center;
+  margin-top: 100px;
+  color: black;
+  font-size: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+  border: solid thin;
+  padding-bottom: 29px;
+  margin-bottom: 0px;
+  text-align: right;
+  border-bottom: none;
+  box-shadow: rgba(119, 108, 108, 0.25) 0px 54px 55px,
+  rgba(119, 108, 108, 0.12) 0px -12px 30px, rgba(119, 108, 108, 0.12) 0px 4px 6px,
+  rgba(119, 108, 108, 0.17) 0px 12px 13px, rgba(119, 108, 108, 0.09) 0px -3px 5px;
+  height: 50px;
+  border-width: 10px;
+  border-top-width: 25px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: white;
+}
+.centerr {
+  margin-left: auto;
+  margin-right: auto;
+  border: solid thin black;
+  background-color: black;
+  color: white;
+  box-shadow: rgba(119, 108, 108, 0.25) 0px 54px 55px,
+  rgba(119, 108, 108, 0.12) 0px -12px 30px, rgba(119, 108, 108, 0.12) 0px 4px 6px,
+  rgba(119, 108, 108, 0.17) 0px 12px 13px, rgba(119, 108, 108, 0.09) 0px -3px 5px;
+
+  border-top: none;
+  display: none;
+  border-width: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.rad {
+  display: none;
+}
+.hidden {
+  display: none;
+}
+.nonhidden {
+  display: table;
+}
+.problem {
+  width: 70px;
+}
+.problemm {
+  width: 70px;
+}
+.deg {
+  opacity: 0.5;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+}
+@media all and (min-width: 300px) and (max-width: 500px) {
+  .button {
+    width: 50px !important;
+    height: 50px;
+  }
+  #smalltext {
+    width: 222px;
+  }
+  .problem {
+    width: 50px;
+  }
+  .problemm {
+    width: 50px;
+  }
+  #bigtext {
+    width: 280px;
+  }
+  body {
+    overflow: hidden;
+  }
+  .deg {
+    width: 50px;
+    height: 50px;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+}
