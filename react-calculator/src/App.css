@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .App-logo {
@@ -37,12 +42,33 @@
   }
 }
 
+.calculator-container {
+  background-color: #cecece; 
+  border-radius:5%;
+  width: 35vh;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.display-container {
+  width: 80%;
+}
+
+.display-container p {
+  background-color: #fffbe4;
+  height: 3rem;
+  font-size: 2rem;
+}
+
 .buttons-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 50px;
-  border: 2px solid black;
-  margin: 0rem 5rem;
+  padding: 1rem;
+  border: 1px solid black;
+  border-radius: 5%;
   gap: 5px;
 }
 
@@ -52,18 +78,4 @@
 
 .equal-button {
   grid-row: span 2;
-}
-
-/* Display */
-
-/* .display-container {
-  color: white;
-  border: 2px solid green;
-} */
-
-.display-container p {
-  border: 2px solid blue;
-  height: 1.5rem;
-  margin: 0rem 5rem; 
-  margin-bottom: 1rem;
 }
