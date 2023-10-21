@@ -1,6 +1,28 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 
 {% block title %}
-    <title>Technology </title>
-{% endblock title %}
-    
+  <title>Technology</title>
+{% endblock %}
+<style>
+  .image-container {
+    width: 500px;
+    height: 250px;
+  }
+  
+  #imageClass {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+</style>
+{% block content %}
+  {% for techpost in technologyPost %}
+    <div class="tech-post">
+      <div class="image-container">
+        <img src="{{ techpost.picture.url }}" alt="Tech Picture" id="imageClass" />
+      </div>
+      <h2>{{ techpost.title }}</h2>
+    </div>
+  {% endfor %}
+{% endblock %}

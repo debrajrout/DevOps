@@ -7,13 +7,11 @@
   <div class="container text-start">
     <div class="row">
       {% for blog in AiPost %}
-        {% if blog.blogType == PostCategory.ai %}
           <div class="col-sm-8">
             <img src="{{ blog.picture.url }}" alt="IMAGE" class="img-fluid" />
             <h3>{{ blog.title }}</h3>
             <p>{{ blog.body }}</p>
           </div>
-        {% endif %}
       {% endfor %}
     </div>
   </div>
