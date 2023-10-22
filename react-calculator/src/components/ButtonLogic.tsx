@@ -4,54 +4,105 @@ This function handles the math / logic associated with each button
 Due to the large nature of this function, I moved it to a separate file so App.tsx is not so congested
 */
 
-import { ButtonValue } from "./Buttons";
+// ButtonLogic.tsx
+// ButtonLogic.tsx
+import { ButtonValue as ImportedButtonValue } from "./Buttons";
 
-export const handleButtonClick = (button: ButtonValue):string => {
-    console.log("HandleButtonClick function firing")
-    switch (button) {
-        case "AC":
-            return "AC"
-        case "()":
-            return "()"
-        case "%":
-            return "%"
-        case "/":
-            return "/"
-        case "7":
-            return "7";
-        case "8":
-            return "8"
-        case "9":
-            return "9"
-        case "X":
-            return "X"
-        case "4":
-            return "4"
-        case "5":
-            return "5"
-        case "6":
-            return "6"
-        case "-":
-            return "-"
-        case "1":
-            return "1"
-        case "2":
-            return "2"
-        case "3":
-            return "3"
-        case "+":
-            return "+"
-        case "0":
-            return "0"
-        case ".":
-            return "."
-        case "<-- Back": 
-            return "back"
-        case "=":
-            return "="
-        default:
-            // Edge casing
-            console.warn("Unhandled button value:", button);
-            return "Error"
-    }
+export enum ButtonValue {
+  AC = "AC",
+  Parentheses = "()",
+  Percent = "%",
+  Divide = "/",
+  Seven = "7",
+  Eight = "8",
+  Nine = "9",
+  Multiply = "X",
+  Four = "4",
+  Five = "5",
+  Six = "6",
+  Minus = "-",
+  One = "1",
+  Two = "2",
+  Three = "3",
+  Plus = "+",
+  Zero = "0",
+  Decimal = ".",
+  Back = "<-- Back",
+  Equals = "=",
+  Sin = "sin",
+  Cos = "cos",
+  Tan = "tan",
+  Log = "log",
+  Ln = "ln",
+  Sqrt = "sqrt",
+  E = "e",
+  Pi = "π",
 }
+
+export const handleButtonClick = (button: ButtonValue): string => {
+  switch (button) {
+    case ButtonValue.AC:
+      return "AC";
+    case ButtonValue.Parentheses:
+      return "()";
+    case ButtonValue.Percent:
+      return "%";
+    case ButtonValue.Divide:
+      return "/";
+    case ButtonValue.Seven:
+      return "7";
+    case ButtonValue.Eight:
+      return "8";
+    case ButtonValue.Nine:
+      return "9";
+    case ButtonValue.Multiply:
+      return "X";
+    case ButtonValue.Four:
+      return "4";
+    case ButtonValue.Five:
+      return "5";
+    case ButtonValue.Six:
+      return "6";
+    case ButtonValue.Minus:
+      return "-";
+    case ButtonValue.One:
+      return "1";
+    case ButtonValue.Two:
+      return "2";
+    case ButtonValue.Three:
+      return "3";
+    case ButtonValue.Plus:
+      return "+";
+    case ButtonValue.Zero:
+      return "0";
+    case ButtonValue.Decimal:
+      return ".";
+    case ButtonValue.Back:
+      return "back";
+    case ButtonValue.Equals:
+      return "=";
+
+    // Scientific Functions and Constants
+    case ButtonValue.Sin:
+      return "sin(";
+    case ButtonValue.Cos:
+      return "cos(";
+    case ButtonValue.Tan:
+      return "tan(";
+    case ButtonValue.Log:
+      return "log(";
+    case ButtonValue.Ln:
+      return "ln(";
+    case ButtonValue.Sqrt:
+      return "sqrt(";
+    case ButtonValue.E:
+      return "e";
+    case ButtonValue.Pi:
+      return "π";
+
+    default:
+      // Edge casing
+      console.warn("Unhandled button value:", button);
+      return "Error";
+  }
+};
