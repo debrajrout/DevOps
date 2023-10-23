@@ -57,59 +57,84 @@ export const handleButtonLogic = (currentState: string[], buttonValue: ButtonVal
 };
 
 const evaluateSequence = (sequence: string[]): number => {
-    let result = parseFloat(sequence[0]);
-
-    for (let i = 1; i < sequence.length; i += 2) {
-        const operator = sequence[i];
-        const nextNum = parseFloat(sequence[i + 1]);
-
-        switch (operator) {
-            case '+':
-                result += nextNum;
-                break;
-            case '-':
-                result -= nextNum;
-                break;
-            case '*':
-                result *= nextNum;
-                break;
-            case '/':
-                if (nextNum !== 0) {
-                    result /= nextNum;
+    const stack: number[] = [];
+    const operatorStack: string[] = [];
+  
+    for (const token of sequence) {
+        if (/^[0-9.]+$/.test(token)) {
+            stack.push(parseFloat(token));
+        } else if (token === 'sin') {
+            if (stack.length >= 1) {
+                const value = stack.pop();
+                if (typeof value === 'number') {
+                    stack.push(Math.sin(value));
+                }
+            }
+        } else if (token === 'cos') {
+            if (stack.length >= 1) {
+                const value = stack.pop();
+                if (typeof value === 'number') {
+                    stack.push(Math.cos(value));
+                }
+            }
+        } else if (token === 'tan') {
+            if (stack.length >= 1) {
+                const value = stack.pop();
+                if (typeof value === 'number') {
+                    stack.push(Math.tan(value));
+                }
+            }
+        } else if (token === 'log') {
+            if (stack.length >= 1) {
+                const value = stack.pop();
+                if (typeof value === 'number' && value > 0) {
+                    stack.push(Math.log10(value));
+                }
+            }
+        } else if (token === 'ln') {
+            if (stack.length >= 1) {
+                const value = stack.pop();
+                if (typeof value === 'number' && value > 0) {
+                    stack.push(Math.log(value));
+                }
+            }
+        } else if (token === '+') {
+            operatorStack.push(token);
+        } else if (token === '-') {
+            operatorStack.push(token);
+        } else if (token === '*') {
+            operatorStack.push(token);
+        } else if (token === '/') {
+            operatorStack.push(token);
+        }
+    }
+  
+    while (operatorStack.length > 0) {
+        const operator = operatorStack.pop();
+        const rightOperand = stack.pop();
+        const leftOperand = stack.pop();
+  
+        if (typeof leftOperand === 'number' && typeof rightOperand === 'number') {
+            if (operator === '+') {
+                stack.push(leftOperand + rightOperand);
+            } else if (operator === '-') {
+                stack.push(leftOperand - rightOperand);
+            } else if (operator === '*') {
+                stack.push(leftOperand * rightOperand);
+            } else if (operator === '/') {
+                if (rightOperand !== 0) {
+                    stack.push(leftOperand / rightOperand);
                 } else {
                     console.error('Division by zero!');
                     return 0; // Handle division by zero
                 }
-                break;
-            case 'sin':
-                result = Math.sin(nextNum);
-                break;
-            case 'cos':
-                result = Math.cos(nextNum);
-                break;
-            case 'tan':
-                result = Math.tan(nextNum);
-                break;
-            case 'log':
-                result = Math.log10(nextNum);
-                break;
-            case 'ln':
-                result = Math.log(nextNum);
-                break;
-            case 'sqrt':
-                result = Math.sqrt(nextNum);
-                break;
-            case 'pi':
-                result = Math.PI;
-                break;
-            case 'e':
-                result = Math.E;
-                break;
-            default:
-                console.warn('Unhandled operator:', operator);
-                break;
+            }
         }
     }
-
-    return result;
+  
+    if (stack.length === 1) {
+        return stack[0];
+    }
+  
+    return 0; // Handle any other errors
 };
