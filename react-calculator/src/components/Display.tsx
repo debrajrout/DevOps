@@ -12,14 +12,15 @@ const Display = ({ value }: DisplayProps) => {
   console.log("Display component rendered with value:", value);
   useEffect(() => {
     console.log('Display component rendered with value:', value);
-}, [value]);
-  
+  }, [value]);
+
   return (
     <div className="display-container">
-      <p>{value}</p>
+      <div className="display-content">
+        <p>{value}</p>
+      </div>
     </div>
   );
 };
-
 
 export default Display;
