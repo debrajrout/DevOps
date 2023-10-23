@@ -1,6 +1,28 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 
 {% block title %}
-    <title>Food </title>
-{% endblock title %}
-    
+  <title>Food</title>
+{% endblock %}
+<style>
+  .image-container {
+    width: 500px;
+    height: 250px;
+  }
+  
+  #imageClass {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+</style>
+{% block content %}
+  {% for food in FoodPost %}
+    <div class="food-post">
+      <div class="image-container">
+        <img src="{{ food.picture.url }}" alt="food Picture" id="imageClass" />
+      </div>
+      <h2>{{ food.title }}</h2>
+    </div>
+  {% endfor %}
+{% endblock %}
