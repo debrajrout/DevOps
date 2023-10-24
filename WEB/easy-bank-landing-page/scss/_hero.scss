@@ -7,10 +7,28 @@
       align-items: center;
     }
   }
+  .hero__image{
+    padding: 72px 13px;
+
+    .desktop-img{
+      width: 100%;
+
+      @include breakpoint-up(small) {
+        display: none;
+      }
+    }
+    .mobile-img{
+      display: none;
+      @include breakpoint-up(small) {
+        display: block;
+      }
+    }
+    
+  }
 
   &__image {
     position: relative;
-    background-image: url("/images/bg-intro-mobile.svg");
+    background: url("../images/bg-intro-desktop.svg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
