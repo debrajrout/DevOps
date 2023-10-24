@@ -18,12 +18,17 @@ const Button = styled.button`
   margin: 0 10px;
 `;
 
-const CookingControls = ({ onStartCooking, onStopCooking, onResetCooking }) => {
+const CookingControls = ({ onStartCooking, onStopCooking, onResetCooking, cookingStatus }) => {
   return (
     <ControlsContainer>
-      <Button onClick={onStartCooking}>Start Cooking</Button>
-      <Button onClick={onStopCooking}>Stop Cooking</Button>
-      <Button onClick={onResetCooking}>Reset</Button>
+      {cookingStatus ? (
+        <>
+          <Button onClick={onStopCooking}>Stop Cooking</Button>
+          <Button onClick={onResetCooking}>Reset</Button>
+        </>
+      ) : (
+        <Button onClick={onStartCooking}>Start Cooking</Button>
+      )}
     </ControlsContainer>
   );
 };

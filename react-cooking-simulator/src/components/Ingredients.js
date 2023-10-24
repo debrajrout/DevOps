@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 const IngredientsContainer = styled.div`
@@ -15,6 +15,14 @@ const Ingredient = styled.div`
   cursor: pointer;
 `;
 
+const IngredientImage = styled.div`
+  width: 80px;
+  height: 80px;
+  background-color: #c0c0c0; /* Default color for ingredients */
+  border: 2px solid #999; /* Border color for ingredients */
+  border-radius: 50%;
+`;
+
 const Ingredients = ({ availableIngredients, onSelectIngredient }) => {
   const handleIngredientClick = (ingredient) => {
     onSelectIngredient(ingredient);
@@ -24,7 +32,9 @@ const Ingredients = ({ availableIngredients, onSelectIngredient }) => {
     <IngredientsContainer>
       {availableIngredients.map((ingredient) => (
         <Ingredient key={ingredient.id} onClick={() => handleIngredientClick(ingredient)}>
-          <img src={ingredient.image} alt={ingredient.name} />
+          <IngredientImage>
+            {/* You can customize the ingredient image using CSS */}
+          </IngredientImage>
           <span>{ingredient.name}</span>
         </Ingredient>
       ))}
